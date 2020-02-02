@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /minecraft
+
+java -Xmx512M -Xms521M -jar /server.jar nogui
