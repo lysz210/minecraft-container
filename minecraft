@@ -2,4 +2,8 @@
 
 cd /minecraft
 
-java -Xmx512M -Xms521M -jar /server.jar nogui
+if [[ -z "${EULA}" ]]; then
+  echo "eula=${EULA}" > /minecraft/eula.txt
+fi
+
+java -Xmx512M -Xms512M -jar /server.jar nogui
