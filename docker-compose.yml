@@ -1,0 +1,10 @@
+services:
+  minecraft:
+    build: .
+    image: lysz210/minecraft:1.15.2
+    environment:
+      - EULA=true
+    volumes:
+      - ./minecraft:/minecraft
+    ports:
+      - "25565:25565"
