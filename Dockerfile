@@ -1,4 +1,4 @@
-FROM openjdk
+FROM arm32v7/openjdk
 
 RUN curl https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar -o /server.jar
 
