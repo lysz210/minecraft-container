@@ -3,7 +3,7 @@ version: '3.6'
 services:
   minecraft:
     build: .
-    image: lysz210/minecraft-armv7:1.15.2
+    image: lysz210/minecraft-armv7:1.16.1
     environment:
       - EULA=true
     volumes:
