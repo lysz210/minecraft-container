@@ -1,7 +1,9 @@
+version: "3.3"
+
 services:
   minecraft:
     build: .
-    image: lysz210/minecraft:1.15.2
+    image: lysz210/minecraft:1.16.1
     environment:
       - EULA=true
     volumes:
