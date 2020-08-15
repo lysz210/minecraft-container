@@ -6,7 +6,7 @@ services:
     image: lysz210/minecraft-armv7:1.16.1
     environment:
       - EULA=true
-      - JAVA_OPTS=-Xmx512M -Xms512M
+      - JAVA_OPTS=-Xmx2g -Xms2g
     volumes:
       - ./minecraft:/minecraft
     ports:
