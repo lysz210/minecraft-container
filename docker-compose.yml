@@ -6,6 +6,7 @@ services:
     image: lysz210/minecraft:1.16.1
     environment:
       - EULA=true
+      - JAVA_OPTS=-Xmx512M -Xms512M
     volumes:
       - ./minecraft:/minecraft
     ports:
