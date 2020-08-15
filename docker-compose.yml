@@ -2,8 +2,11 @@ version: '3.6'
 
 services:
   minecraft:
-    build: .
-    image: lysz210/minecraft-armv7:1.16.1
+    build:
+      context: .
+      args:
+        minecraft_server: https://launcher.mojang.com/v1/objects/c5f6fb23c3876461d46ec380421e42b289789530/server.jar
+    image: lysz210/minecraft-armv7:1.16.2
     environment:
       - EULA=true
       - JAVA_OPTS=-Xmx2g -Xms2g
@@ -11,3 +14,4 @@ services:
       - ./minecraft:/minecraft
     ports:
       - "25565:25565"
+    entrypoint: minecraft
